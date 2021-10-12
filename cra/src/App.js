@@ -10,12 +10,13 @@ import {
   Home,
   Components,
   ClassVsFunctions,
-  Localisation
+  Localisation,
+  HttpRequests
 } from './pages/';
 
 const BackButton = routeProps => (routeProps.location.pathname !== "/")
   ? <div>
-    <NavLink to="/">Home</NavLink>
+    <NavLink className='btn btn-link' to="/">Home</NavLink>
   </div>
   : null;
 
@@ -24,6 +25,9 @@ const App = () => {
     <Router>
       <div className="container py-3">
         <Switch>
+          <Route path='/http-requests'>
+            <HttpRequests />
+          </Route>
           <Route path='/components'>
             <Components />
           </Route>
