@@ -11,7 +11,8 @@ import {
   Components,
   ClassVsFunctions,
   Localisation,
-  HttpRequests
+  HttpRequests,
+  UseRef
 } from './pages/';
 
 const routes = [
@@ -34,6 +35,11 @@ const routes = [
     path: '/i18n',
     exact: true,
     component: Localisation
+  },
+  {
+    path: '/useRef',
+    exact: true,
+    component: UseRef
   },
   {
     path: '/',

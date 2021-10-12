@@ -14,6 +14,10 @@ const links = [
     {
         to: '/http-requests',
         label: 'Http requests'
+    },
+    {
+        to: '/useRef',
+        label: 'UseRef'
     }
 ];
 
