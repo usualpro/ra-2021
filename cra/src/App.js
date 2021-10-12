@@ -5,8 +5,11 @@ import {
 } from "react-router-dom";
 
 import './styles/main.scss';
-import { Home } from './pages/Home';
-import { Components } from './pages/Components';
+import {
+  Home,
+  Components,
+  ClassVsFunctions
+} from './pages/';
 
 const App = () => {
   return (
@@ -15,6 +18,9 @@ const App = () => {
         <Switch>
           <Route path='/components'>
             <Components />
+          </Route>
+          <Route path='/classvsfunctions'>
+            <ClassVsFunctions />
           </Route>
           <Route path='/'>
             <Home />
