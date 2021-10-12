@@ -59,7 +59,7 @@ const Routes = () => <Switch>
 </Switch>;
 
 const BackButton = routeProps => (routeProps.location.pathname !== "/")
-  ? <div>
+  ? <div className="pt-3">
     <NavLink className='btn btn-outline-secondary' to="/">Home</NavLink>
   </div>
   : null;
@@ -70,7 +70,7 @@ const App = () => {
       <div className="container py-3">
         <Routes />
         <Route render={routeProps => <BackButton {...routeProps} />} />
-      </div>
+      </div>  
     </Router>
   );
 }
