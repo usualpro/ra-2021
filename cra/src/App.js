@@ -16,7 +16,7 @@ import {
 
 const BackButton = routeProps => (routeProps.location.pathname !== "/")
   ? <div>
-    <NavLink className='btn btn-link' to="/">Home</NavLink>
+    <NavLink className='btn btn-outline-secondary' to="/">Home</NavLink>
   </div>
   : null;
 
