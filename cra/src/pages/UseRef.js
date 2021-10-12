@@ -10,10 +10,11 @@ const vanillaTiltOptions = {
 
 export const UseRef = () => {
     const domRef = useRef(null);
+
     useEffect(() => {
-        console.log(domRef)
         VanillaTilt.init(domRef.current, vanillaTiltOptions);
-    }, [])
+    }, []);
+
     return <>
         <h1>UseRef</h1>
         <div ref={domRef} className="p-3 bg-info text-light" >
