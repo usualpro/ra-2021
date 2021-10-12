@@ -13,6 +13,12 @@ import {
   Localisation
 } from './pages/';
 
+const BackButton = routeProps => (routeProps.location.pathname !== "/")
+  ? <div>
+    <NavLink to="/">Home</NavLink>
+  </div>
+  : null;
+
 const App = () => {
   return (
     <Router>
@@ -27,14 +33,11 @@ const App = () => {
           <Route path='/i18n'>
             <Localisation />
           </Route>
-          <Route path='/'>
+          <Route path="/">
             <Home />
           </Route>
         </Switch>
-        <div>
-          <NavLink to="/">Home</NavLink>
-        </div>
-
+        <Route render={routeProps => <BackButton {...routeProps} />} />
       </div>
     </Router>
   );
