@@ -10,7 +10,7 @@ import './styles/main.scss';
 function App(props) {
   const [count, setCount] = useState(0);
   const onClickHandler = () => {
-    setCount(count + 1);
+    setCount(prevCount => prevCount + 1);
   }
 
   return (
