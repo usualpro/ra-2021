@@ -16,7 +16,6 @@ export const CustomMap = props => {
         }
     );
     return <div className="w-100 mb-3">
-        {props.countries.length}
         <Map
             center={[0, 0]}
             zoom={3}
