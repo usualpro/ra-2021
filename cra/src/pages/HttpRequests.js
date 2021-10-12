@@ -21,7 +21,7 @@ export const HttpRequests = () => {
             )
         , []);
     return <>
-        <h1>Http requests</h1> 
-        <CustomMap />
+        <h1>Http requests</h1>
+        <CustomMap countries={countries} />
     </>
 };
