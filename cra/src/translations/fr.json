@@ -1,4 +1,4 @@
 {
     "myMessage": "Aujourd'hui, c'est le {ts, date, ===yyyyMMdd}",
-    "helloReact": "Bonjour React {nom}"
+    "inTheKitchen": "Kevin est dans la cuisine"
 }

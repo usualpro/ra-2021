@@ -1,0 +1,4 @@
+{
+    "myMessage": "Today, {ts, date, ===yyyyMMdd}",
+    "inTheKitchen": "Kevin is in the kitchen"
+}
