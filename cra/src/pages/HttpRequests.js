@@ -1,16 +1,10 @@
 import Axios from 'axios';
 import { useState, useEffect } from 'react';
-import { ParagrapheClass } from '../components/ParagrapheClass';
+import { CustomMap } from '../components/CustomMap';
 
-//import allCountries from '../data/all.json';
-
-
-const getCountries = () => Axios.get("https://restcountries.com/v3.1/all")
-
-
+const getCountries = () => Axios.get("https://restcountries.com/v3.1/all");
 export const HttpRequests = () => {
     const [countries, setCountries] = useState([]);
-
     useEffect(
         () => getCountries()
             .then(
@@ -27,9 +21,7 @@ export const HttpRequests = () => {
             )
         , []);
     return <>
-        {
-            countries.length
-        } countries
-        <ParagrapheClass />
+        <h1>Http requests</h1> 
+        <CustomMap />
     </>
 };
