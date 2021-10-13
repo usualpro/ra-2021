@@ -15,5 +15,4 @@ export const Observables = () => <>
     <div className='row gy-3'>
         <UserList />
     </div>
-
 </>
