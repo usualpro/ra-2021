@@ -18,6 +18,10 @@ const links = [
     {
         to: '/useRef',
         label: 'UseRef'
+    },
+    {
+        to: '/useReducer',
+        label: 'UseReducer'
     }
 ];
 

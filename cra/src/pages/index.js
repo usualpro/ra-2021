@@ -4,6 +4,7 @@ import { ClassVsFunctions } from './ClassVsFunctions';
 import { Localisation } from './Localisation';
 import { HttpRequests } from './HttpRequests';
 import { UseRef } from './UseRef';
+import { UseReducer } from './UseReducer';
 
 export {
     Home,
@@ -11,5 +12,6 @@ export {
     ClassVsFunctions,
     Localisation,
     HttpRequests,
-    UseRef
+    UseRef,
+    UseReducer
 }
