@@ -5,13 +5,19 @@ export class ParagrapheClass extends Component {
     state = {
         count: 0
     }
+    //0
     constructor() {
         super();
         console.log("constructor");
     }
 
-    componentWillMount() {
-        console.log("componentWillMount");
+    //3
+    componentDidMount() {
+        console.log("componentDidMount");
+    }
+
+    componentDidUpdate() {
+        console.log("componentDidUpdate");
     }
 
     updateState = () => {
@@ -20,6 +26,11 @@ export class ParagrapheClass extends Component {
         });
     }
 
+    componentWillUnmount() {
+        console.log("componentWillUnmount");
+    }
+
+    //2
     render() {
         console.log("render");
         return <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse dolorum harum dolor, ea molestias vitae aspernatur rerum, earum optio expedita incidunt! Debitis expedita aliquam quis aperiam eum commodi aut earum.
@@ -27,13 +38,5 @@ export class ParagrapheClass extends Component {
                 Clicker moi {this.state.count}
             </ButtonRegularOutline>
         </p>;
-    }
-
-    componentDidMount() {
-        console.log("componentDidMount");
-    }
-
-    componentDidUpdate() {
-        console.log("componentDidUpdate");
     }
 };
