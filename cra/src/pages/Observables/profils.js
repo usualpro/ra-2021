@@ -3,7 +3,7 @@ import { makeAutoObservable } from 'mobx'
 
 class Profile {
     _users = [];
-    _usersEndpointUrl = 'https://61669f4013aa1d00170a65df.mockapi.io/users';
+    _usersEndpointUrl = `${process.env.PUBLIC_URL}/data/users.json`;
 
     constructor() {
         makeAutoObservable(this);
