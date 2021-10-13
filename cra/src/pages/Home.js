@@ -2,6 +2,8 @@ import {
     Link
 } from "react-router-dom";
 
+import Instance from '../instance';
+
 const links = [
     {
         to: '/classvsfunctions',
@@ -22,6 +24,10 @@ const links = [
     {
         to: '/useReducer',
         label: 'UseReducer'
+    },
+    {
+        to: '/observables',
+        label: 'Observables'
     }
 ];
 
@@ -35,7 +41,7 @@ const Links = () => links.map(
 );
 
 export const Home = () => <div>
-    <h1>React Avancé</h1>
+    <h1>{Instance.name}</h1>
     <div className="list-group">
         <Links />
     </div>

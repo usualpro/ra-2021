@@ -13,7 +13,8 @@ import {
   Localisation,
   HttpRequests,
   UseRef,
-  UseReducer
+  UseReducer,
+  Observables
 } from './pages/';
 
 const routes = [
@@ -46,6 +47,11 @@ const routes = [
     path: '/useReducer',
     exact: true,
     component: UseReducer
+  },
+  {
+    path: '/observables',
+    exact: true,
+    component: Observables
   },
   {
     path: '/',

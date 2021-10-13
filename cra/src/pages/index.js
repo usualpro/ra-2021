@@ -5,6 +5,7 @@ import { Localisation } from './Localisation';
 import { HttpRequests } from './HttpRequests';
 import { UseRef } from './UseRef';
 import { UseReducer } from './UseReducer';
+import { Observables } from './Observables';
 
 export {
     Home,
@@ -13,5 +14,6 @@ export {
     Localisation,
     HttpRequests,
     UseRef,
-    UseReducer
+    UseReducer,
+    Observables
 }
